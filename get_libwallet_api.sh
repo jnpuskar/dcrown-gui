@@ -1,5 +1,5 @@
 #!/bin/bash
-MONERO_URL=https://github.com/monero-project/monero.git
+MONERO_URL=https://github.com/jnpuskar/dcrown.git
 MONERO_BRANCH=master
 
 pushd $(pwd)
@@ -8,7 +8,7 @@ ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source $ROOT_DIR/utils.sh
 
 INSTALL_DIR=$ROOT_DIR/wallet
-MONERO_DIR=$ROOT_DIR/monero
+MONERO_DIR=$ROOT_DIR/dcrown
 BUILD_LIBWALLET=false
 
 # init and update monero submodule
@@ -17,7 +17,7 @@ if [ ! -d $MONERO_DIR/src ]; then
 fi
 git submodule update --remote
 git -C $MONERO_DIR fetch
-git -C $MONERO_DIR checkout release-v0.11.0.0
+git -C $MONERO_DIR checkout
 
 # get monero core tag
 get_tag
