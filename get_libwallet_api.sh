@@ -13,7 +13,7 @@ BUILD_LIBWALLET=false
 
 # init and update monero submodule
 if [ ! -d $MONERO_DIR/src ]; then
-    git submodule init monero
+    git submodule init dcrown
 fi
 git submodule update --remote
 git -C $MONERO_DIR fetch
