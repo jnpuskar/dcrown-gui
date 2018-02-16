@@ -1,4 +1,4 @@
-[submodule "monero"]
-	path = monero
-	url = https://github.com/monero-project/monero
+[submodule "dcrown"]
+	path = dcrown
+	url = https://github.com/jnpuskar/dcrown
 	ignore = all
