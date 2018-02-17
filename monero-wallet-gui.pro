@@ -2,7 +2,7 @@ TEMPLATE = app
 
 QT += qml quick widgets
 
-WALLET_ROOT=$$PWD/monero
+WALLET_ROOT=$$PWD/dcrown
 
 CONFIG += c++11
 
@@ -400,7 +400,7 @@ OTHER_FILES += \
 
 DISTFILES += \
     notes.txt \
-    monero/src/wallet/CMakeLists.txt \
+    dcrown/src/wallet/CMakeLists.txt \
     components/MobileHeader.qml
 
 
