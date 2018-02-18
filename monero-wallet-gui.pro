@@ -1,5 +1,7 @@
 TEMPLATE = app
 
+TARGET = dcrown-wallet-gui
+
 QT += qml quick widgets
 
 WALLET_ROOT=$$PWD/dcrown

@@ -46,7 +46,7 @@ source ./utils.sh
 pushd $(pwd)
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 MONERO_DIR=dcrown
-MONEROD_EXEC=monerod
+MONEROD_EXEC=dcrownd
 
 MAKE='make'
 if [[ $platform == *bsd* ]]; then
@@ -73,7 +73,7 @@ fi
 if [ "$platform" == "darwin" ]; then
     BIN_PATH=$BIN_PATH/monero-wallet-gui.app/Contents/MacOS/
 elif [ "$platform" == "mingw64" ] || [ "$platform" == "mingw32" ]; then
-    MONEROD_EXEC=monerod.exe
+    MONEROD_EXEC=dcrownd.exe
 fi
 
 # force version update
