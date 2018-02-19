@@ -75,16 +75,16 @@ int main(int argc, char *argv[])
 //#endif
 
     // Log settings
-    Monero::Wallet::init(argv[0], "monero-wallet-gui");
+    Monero::Wallet::init(argv[0], "dcrown-wallet-gui");
 //    qInstallMessageHandler(messageHandler);
 
     MainApp app(argc, argv);
 
     qDebug() << "app startd";
 
-    app.setApplicationName("monero-core");
-    app.setOrganizationDomain("getmonero.org");
-    app.setOrganizationName("monero-project");
+    app.setApplicationName("dcrown-core");
+    app.setOrganizationDomain("dcrown.org");
+    app.setOrganizationName("dcrown-project");
 
     filter *eventFilter = new filter;
     app.installEventFilter(eventFilter);
